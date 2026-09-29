@@ -1,3 +1,8 @@
+> **2026 rewrite:** upstream is archived and its discovery no longer matches how
+> nodes serve snapshots today. `snapfind.py` probes every gossip-discovered RPC
+> node's `snapshot.tar.bz2` HEAD redirect, ranks by slot freshness and download
+> speed, and pulls the newest full snapshot with aria2. Single file, no deps.
+
 # solana-snapshot-finder
 Automatic search and download of snapshots for Solana  
 
